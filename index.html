@@ -37,15 +37,34 @@
         .container {
             margin-top: 50px;
         }
+        .button {
+            margin-top: 20px;
+            background-color: #48cae4; /* matching cyan */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0077b6; /* darker blue */
+        }
     </style>
+
+    <script>
+        function showMessage() {
+            alert("A positive year of 22 officially claimed! 💖");
+        }
+    </script>
 </head>
 <body>
 
     <div class="container">
-        <h1>Happy Birthday, Dr. May Mi! 🎉</h1>
+        <h1>Happy Birthday, soon-to-be Dr. May Mi! 🎉</h1>
         <div class="birthday-message">
             Wishing you a wonderful year ahead filled with happiness and success! <br>
-            Thank you for being such an amazing doctor and friend! 💖
+            Thank you for being such an amazing doctor-to-be and friend! 💖
         </div>
         <div class="blue-hearts">💙💙💙💙💙</div>
 
@@ -53,6 +72,9 @@
         <div>
             <i class="fas fa-user-md doctor-icon"></i>
         </div>
+
+        <!-- Button that triggers message -->
+        <button class="button" onclick="showMessage()">Click here</button>
     </div>
 
 </body>
